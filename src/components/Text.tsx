@@ -4,6 +4,7 @@ import {
   fontWeight,
   textAlign,
   textColor,
+  textDecoration,
 } from 'classnames/tailwind'
 import ChildrenProp from 'models/ChildrenProp'
 
@@ -12,9 +13,8 @@ const grayText = classnames(textColor('text-gray-300'))
 
 const headerText = classnames(
   whiteText,
-  fontSize('text-3xl', 'md:text-6xl'),
-  fontWeight('font-bold'),
-  textAlign('text-center')
+  fontSize('text-2xl', 'md:text-4xl'),
+  fontWeight('font-bold')
 )
 export function HeaderText({ children }: ChildrenProp) {
   return <p className={headerText}>{children}</p>
@@ -23,4 +23,18 @@ export function HeaderText({ children }: ChildrenProp) {
 const bodyText = classnames(grayText, textAlign('text-center'))
 export function BodyText({ children }: ChildrenProp) {
   return <p className={bodyText}>{children}</p>
+}
+
+const link = classnames(textDecoration('underline'))
+export function Link({
+  children,
+  href,
+}: ChildrenProp & {
+  href: string
+}) {
+  return (
+    <a className={link} href={href} rel="noreferrer noopener" target="_blank">
+      {children}
+    </a>
+  )
 }

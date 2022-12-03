@@ -1,23 +1,35 @@
-import { HeaderText } from 'components/Text'
+import { BodyText, HeaderText, Link } from 'components/Text'
 import classnames, {
   alignItems,
   display,
   flexDirection,
+  gap,
   justifyContent,
-  space,
 } from 'classnames/tailwind'
 
 const container = classnames(
   display('flex'),
   flexDirection('flex-col'),
   justifyContent('justify-center'),
-  alignItems('items-center'),
-  space('space-y-2')
+  alignItems('items-start'),
+  gap('gap-2')
 )
 export default function () {
   return (
     <div className={container}>
       <HeaderText>Crosscaster</HeaderText>
+      <BodyText>Cast to Farcaster from your Twitter profile!</BodyText>
+      <BodyText>
+        Nothing is stored in the browser. The code for{' '}
+        <Link href="https://github.com/backmeupplz/crosscaster-frontend">
+          the frontend
+        </Link>{' '}
+        and{' '}
+        <Link href="https://github.com/backmeupplz/crosscaster-frontend">
+          the backend
+        </Link>{' '}
+        is open source.
+      </BodyText>
     </div>
   )
 }
