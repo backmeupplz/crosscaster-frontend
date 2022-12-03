@@ -5947,6 +5947,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"crosscaster-frontend@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "crosscaster-frontend@workspace:."
+  dependencies:
+    "@preact/preset-vite": ^2.4.0
+    "@types/node": ^18.11.10
+    "@typescript-eslint/eslint-plugin": ^5.45.0
+    "@typescript-eslint/parser": ^5.45.0
+    "@vitejs/plugin-react": ^2.2.0
+    autoprefixer: ^10.4.13
+    cross-env: ^7.0.3
+    eslint: ^8.29.0
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-no-relative-import-paths: ^1.5.0
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-react: ^7.31.11
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-sort-imports-es6-autofix: ^0.6.0
+    postcss: ^8.4.19
+    preact: ^10.11.3
+    prettier: ^2.8.0
+    react-scripts: ^5.0.1
+    rollup-plugin-visualizer: ^5.8.3
+    tailwindcss: ^3.2.4
+    tailwindcss-classnames: ^3.0.7
+    typescript: ^4.9.3
+    unfetch: ^4.2.0
+    vite: ^3.2.4
+    vite-tsconfig-paths: ^3.6.0
+  languageName: unknown
+  linkType: soft
+
 "crypto-random-string@npm:^2.0.0":
   version: 2.0.0
   resolution: "crypto-random-string@npm:2.0.0"
@@ -7462,13 +7495,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-valtio@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "eslint-plugin-valtio@npm:0.6.1"
-  checksum: c9fa5ab7db9fed3069af79d7f3a1613b60e130045220df63da4dbbc9bdaaf56b88e5690f2c18c76eaa943bf95d749889a48c483148cf2c5f3593c99c8947ace6
-  languageName: node
-  linkType: hard
-
 "eslint-scope@npm:5.1.1, eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -8146,41 +8172,6 @@ __metadata:
   checksum: 13ea8b08f91e669a64e3ba3a20eb79d7ca5379a81f1ff7f4310d54e2320645503cc0c78daedc93dfb6191287295f6479544a649c64d8e41a1c0fb0c221552346
   languageName: node
   linkType: hard
-
-"frontend-starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "frontend-starter@workspace:."
-  dependencies:
-    "@preact/preset-vite": ^2.4.0
-    "@types/node": ^18.11.10
-    "@typescript-eslint/eslint-plugin": ^5.45.0
-    "@typescript-eslint/parser": ^5.45.0
-    "@vitejs/plugin-react": ^2.2.0
-    autoprefixer: ^10.4.13
-    cross-env: ^7.0.3
-    eslint: ^8.29.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-no-relative-import-paths: ^1.5.0
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-react: ^7.31.11
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-sort-imports-es6-autofix: ^0.6.0
-    eslint-plugin-valtio: ^0.6.1
-    postcss: ^8.4.19
-    preact: ^10.11.3
-    prettier: ^2.8.0
-    react-scripts: ^5.0.1
-    rollup-plugin-visualizer: ^5.8.3
-    tailwindcss: ^3.2.4
-    tailwindcss-classnames: ^3.0.7
-    typescript: ^4.9.3
-    unfetch: ^4.2.0
-    valtio: ^1.7.6
-    vite: ^3.2.4
-    vite-tsconfig-paths: ^3.6.0
-  languageName: unknown
-  linkType: soft
 
 "fs-extra@npm:^10.0.0":
   version: 10.0.0
@@ -12655,13 +12646,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proxy-compare@npm:2.3.0":
-  version: 2.3.0
-  resolution: "proxy-compare@npm:2.3.0"
-  checksum: 7136ec8ee7da839e67db91183858cf4c19e4bea5ca72235c0e18b30ad0230198d71f0643c595458479f5ea466be4573b37d627f0b8c1ab2dc53161e9ad7c58e7
-  languageName: node
-  linkType: hard
-
 "psl@npm:^1.1.33":
   version: 1.8.0
   resolution: "psl@npm:1.8.0"
@@ -14862,15 +14846,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:1.2.0":
-  version: 1.2.0
-  resolution: "use-sync-external-store@npm:1.2.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
-  languageName: node
-  linkType: hard
-
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -14928,36 +14903,6 @@ __metadata:
     convert-source-map: ^1.6.0
     source-map: ^0.7.3
   checksum: c7dabf9567e0c210b24d0720e553803cbe1ff81edb1ec7f2080eb4be01ed081a40286cc9f4aaa86d1bf8d57840cefae8fdf326b7cb8faa316ba50c7b948030d4
-  languageName: node
-  linkType: hard
-
-"valtio@npm:^1.7.6":
-  version: 1.7.6
-  resolution: "valtio@npm:1.7.6"
-  dependencies:
-    proxy-compare: 2.3.0
-    use-sync-external-store: 1.2.0
-  peerDependencies:
-    "@babel/helper-module-imports": ">=7.12"
-    "@babel/types": ">=7.13"
-    aslemammad-vite-plugin-macro: ">=1.0.0-alpha.1"
-    babel-plugin-macros: ">=3.0"
-    react: ">=16.8"
-    vite: ">=2.8.6"
-  peerDependenciesMeta:
-    "@babel/helper-module-imports":
-      optional: true
-    "@babel/types":
-      optional: true
-    aslemammad-vite-plugin-macro:
-      optional: true
-    babel-plugin-macros:
-      optional: true
-    react:
-      optional: true
-    vite:
-      optional: true
-  checksum: 2e2b0ce372a9bf7b38d5207fe8258972c2c6a84aec31d6be9c0940ac7ff8ce29eb1ee16b272e566ec143075cb342926ddcb5607e27c36676ac607a43c9468940
   languageName: node
   linkType: hard
 

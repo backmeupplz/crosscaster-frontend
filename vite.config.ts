@@ -6,6 +6,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 export default defineConfig({
   plugins: [preact(), tsconfigPaths()],
   build: {
+    outDir: './docs',
     rollupOptions: {
       plugins: [
         visualizer({
