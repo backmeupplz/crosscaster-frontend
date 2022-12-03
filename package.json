@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^2.2.0",
+    "ethers": "^5.7.2",
     "preact": "^10.11.3",
     "unfetch": "^4.2.0"
   },
