@@ -10,8 +10,8 @@ import ChildrenProp from 'models/ChildrenProp'
 const root = classnames(
   container('container'),
   margin('mx-auto'),
-  padding('pb-10', 'py-4'),
-  maxWidth('max-w-4xl')
+  padding('py-4', 'px-2', 'md:px-4'),
+  maxWidth('max-w-prose')
 )
 export default function ({ children }: ChildrenProp) {
   return <div className={root}>{children}</div>

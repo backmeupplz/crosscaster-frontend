@@ -28,7 +28,8 @@ export default function () {
         <Link href="https://github.com/backmeupplz/crosscaster-frontend">
           the backend
         </Link>{' '}
-        is open source.
+        is open source. Built by <Link href="https://bdut.ch">@borodutch</Link>{' '}
+        with love.
       </BodyText>
     </div>
   )
