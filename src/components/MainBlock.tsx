@@ -23,7 +23,7 @@ export default function () {
       <HeaderText>Crosscaster</HeaderText>
       <BodyText>
         Cast to Farcaster from your Twitter profile! After you setup
-        Crosscaster, whatever you tweet will be cross-casted to Farcaster
+        Crosscaster, whatever you tweet will be crosscasted to Farcaster
         automatically.
       </BodyText>
       <BodyText>

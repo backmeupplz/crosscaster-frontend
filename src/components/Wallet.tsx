@@ -2,6 +2,7 @@ import { BodyText } from 'components/Text'
 import { TargetedEvent } from 'preact/compat'
 import { ethers } from 'ethers'
 import { useEffect, useState } from 'preact/hooks'
+import ManageSubscription from 'components/ManageSubscription'
 import RecoveryPhraseExplanation from 'components/RecoveryPhraseExplanation'
 import classnames, { borderRadius, padding } from 'classnames/tailwind'
 import useIsFarcasterUser from 'hooks/useIsFarcasterUser'
@@ -35,11 +36,12 @@ export default function () {
     <>
       <RecoveryPhraseExplanation />
       <input
-        type="text"
+        type="password"
         className={textField}
         onInput={(e: TargetedEvent<HTMLInputElement>) =>
           setMnemonic(e.currentTarget.value)
         }
+        placeholder="Enter your recovery phrase"
       />
       {error && <BodyText>{error}</BodyText>}
       {wallet && (
@@ -54,11 +56,7 @@ export default function () {
               {farcasterUserError.message}
             </BodyText>
           )}
-          {isFarcasterUser && (
-            <BodyText>
-              This is a Farcaster user! You can now cross-cast to Farcaster.
-            </BodyText>
-          )}
+          {isFarcasterUser && <ManageSubscription mnemonic={mnemonic} />}
           {!loading && !farcasterUserError && !isFarcasterUser && (
             <BodyText>
               This is not a Farcaster user. Please, enter a valid Farcaster user

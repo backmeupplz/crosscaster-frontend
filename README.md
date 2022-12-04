@@ -3,16 +3,7 @@
 ## Local launch
 
 1. Install dependencies with `yarn`
-2. Add environment variables to `.env` file
-3. Run the server with `yarn start`
-
-## Environment variables
-
-| Variable     | Description |
-| ------------ | ----------- |
-| VITE_BACKEND | Backend URL |
-
-Also check out the `.env.sample` file.
+2. Run the server with `yarn start`
 
 ## Available Scripts
 
