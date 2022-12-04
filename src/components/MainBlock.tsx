@@ -24,7 +24,7 @@ export default function () {
       <BodyText>
         Cast to Farcaster from your Twitter profile! After you setup
         Crosscaster, whatever you tweet will be crosscasted to Farcaster
-        automatically.
+        automatically. Crosscaster checks tweets every 15 minutes.
       </BodyText>
       <BodyText>
         Nothing is stored in the browser. The code for{' '}
