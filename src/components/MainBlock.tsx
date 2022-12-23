@@ -32,7 +32,7 @@ export default function () {
           the frontend
         </Link>{' '}
         and{' '}
-        <Link href="https://github.com/backmeupplz/crosscaster-frontend">
+        <Link href="https://github.com/backmeupplz/crosscaster-backend">
           the backend
         </Link>{' '}
         is open source. Built by <Link href="https://bdut.ch">@borodutch</Link>{' '}
